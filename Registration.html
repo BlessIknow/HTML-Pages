@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Your description goes here" />
+    <meta name="keywords" content="one, two, three" />
+    <title>Contact</title>
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="Registration.html" class="current">Registration</a></li>
+          <li><a href="Login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- <hr />  header line-->
+    <main>
+      <h1 class="contact">Registration Form</h1>
+      <form action="">
+        <table>
+          <tr>
+            <td><label for="fname">First Name</label></td>
+            <td>
+              <input
+                type="text"
+                id="fname"
+                minlength="3"
+                maxlength="15"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="lname">Last Name</label></td>
+            <td>
+              <input
+                type="text"
+                id="lname"
+                minlength="3"
+                maxlength="15"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Phone">Phone</label></td>
+            <td><input type="tel" id="phone" required /></td>
+          </tr>
+          <tr>
+            <td><label for="name">Gender</label></td>
+            <td>
+              <select name="gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="c/s">Country State/province</label></td>
+            <td>
+              <input
+                type="text"
+                id="c/s"
+                placeholder="e.g Lagos Nigeria"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type="email" id="email" required /></td>
+          </tr>
+          <tr>
+            <td><label for="pwd">Password</label></td>
+            <td>
+              <input
+                type="password"
+                id="pwd"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                title="Must contain at least one number and one uppercase and lowercase letter, 
+                and at least 6 or more characters"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Cpwd">Confirm password</label></td>
+            <td><input type="password" id="Cpwd" required /></td>
+          </tr>
+          <tr>
+            <td><label for=""></label></td>
+            <td><input type="submit" /></td>
+          </tr>
+        </table>
+      </form>
+    </main>
+    <footer>
+      <!-- <nav>
+        <ul>
+          <li>Email: blessvic2013@gmail.com</li>
+          <li>© all right reserved</li>
+        </ul>
+      </nav> -->
+    </footer>
+  </body>
+</html>
